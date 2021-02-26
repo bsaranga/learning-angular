@@ -1,0 +1,12 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc index.ts specialtypes.ts operators.ts classes.ts interfaces.ts arrowfunctions.ts -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
