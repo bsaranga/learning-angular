@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc index.ts specialtypes.ts -w"
+    "start": "tsc index.ts specialtypes.ts operators.ts -w"
   },
   "keywords": [],
   "author": "",
