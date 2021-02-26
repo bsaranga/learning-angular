@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'minimal';
   myName = 'Saranga'
+  fontColor = 'blue';
+  sayHelloId = 1;
+  canClick = false;
+  message = 'Hello World';
+  sayMessage() {
+    alert(this.message)
+  }
 }
