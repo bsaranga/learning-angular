@@ -18,9 +18,13 @@ export class CurrentWeatherComponent implements OnInit {
   ngOnInit(): void {
     this.weatherService.getCurrentWeather('Colombo', 'LK')
       .subscribe((data) => {
-        console.log(data)
         this.current = data
       })
+  }
+
+  click(params: ICurrentWeather): void {
+    console.log("Clicked...");
+    console.log(params);
   }
 
 }
