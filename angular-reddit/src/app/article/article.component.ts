@@ -22,7 +22,7 @@ export class ArticleComponent implements OnInit {
   }
 
   voteDown() {
-    this.article?.voteUp();
+    this.article?.voteDown();
     return false;
   }
 

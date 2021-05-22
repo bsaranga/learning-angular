@@ -23,8 +23,12 @@ export class AppComponent {
     console.log(`Adding article title: ${title.value} and link: ${link.value}`);
 
     this.articles.push(new Article(title.value, link.value, 0))
-    
+
     title.value = "";
     link.value = "";
+  }
+
+  sortedArticles(): Array<Article> {
+    return this.articles.sort((a: Article, b: Article) => b.getVotes() - a.getVotes())
   }
 }
