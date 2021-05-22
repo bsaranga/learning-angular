@@ -1,0 +1,8 @@
+.extraBorder {
+    transition: transform 250ms;
+}
+
+.extraBorder:hover {
+    transform: scale(1.03);
+}
+
