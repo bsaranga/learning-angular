@@ -9,7 +9,7 @@ import { Article } from './article.model';
 export class ArticleComponent implements OnInit {
 
   @Input() article?: Article;
-  @HostBinding('attr.class') cssClass = 'extraBorder';
+  @HostBinding('attr.class') cssClass = 'scaleOnHover';
 
   hovered: boolean = false;
 
