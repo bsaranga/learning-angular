@@ -1,0 +1,10 @@
+.header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 25vw; 
+    border: 1px solid grey;
+    border-radius: 0.25rem; 
+    padding: 1rem;
+    margin: 1rem 0rem 1rem 0rem;
+}
