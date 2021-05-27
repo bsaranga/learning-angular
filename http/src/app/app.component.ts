@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { interval } from 'rxjs';
+import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,7 +18,10 @@ export class AppComponent implements OnInit {
 
   initializeCounter():void {
     const secondsCounter = interval(1000);
-    secondsCounter.subscribe(n => {
+    const cubedVals = map((val: number) => Math.pow(val, 3));
+    const cubedCounter = cubedVals(secondsCounter);
+
+    cubedCounter.subscribe(n => {
       this.count = n;
     });
   }
