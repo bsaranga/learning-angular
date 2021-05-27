@@ -1,0 +1,16 @@
+* {
+    font-size: 0.8rem;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid rgb(216, 216, 216);
+}
+
+tr {
+    border-bottom: 1px solid rgb(185, 100, 100);
+}
+
+td:not(:last-child) {
+    border-right: 1px solid rgb(163, 86, 86);
+}

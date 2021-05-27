@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { TaskServiceService } from './task-service.service';
 import { interval } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { ITaskData } from './ITaskData';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,9 +13,15 @@ export class AppComponent implements OnInit {
 
   count: number = 0;
   title = 'http';
+  taskData: any = [];
+
+  constructor(private taskService : TaskServiceService) {
+
+  }
 
   ngOnInit() {
     this.initializeCounter();
+    this.taskService.getTasks().subscribe((data) => {this.taskData = data});
   }
 
   initializeCounter():void {

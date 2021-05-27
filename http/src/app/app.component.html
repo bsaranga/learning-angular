@@ -10,12 +10,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>sd9872yiue</td>
-      <td>dfskjhdf</td>
-      <td>fsdfsdf</td>
-      <td>fsdfs</td>
-      <td>fsdfsd</td>
+    <tr *ngFor="let task of taskData">
+      <td>{{task.id}}</td>
+      <td>{{task.name}}</td>
+      <td>{{task.startTime}}</td>
+      <td>{{task.endTime}}</td>
+      <td>{{task.userDetails.username}}</td>
     </tr>
   </tbody>
 </table>
