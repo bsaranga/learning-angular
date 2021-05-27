@@ -21,8 +21,12 @@ export class AppComponent implements OnInit {
     const cubedVals = map((val: number) => Math.pow(val, 3));
     const cubedCounter = cubedVals(secondsCounter);
 
-    cubedCounter.subscribe(n => {
+    const sub = cubedCounter.subscribe(n => {
       this.count = n;
     });
+
+    setTimeout(() => {
+      sub.unsubscribe();
+    }, 5000);
   }
 }
