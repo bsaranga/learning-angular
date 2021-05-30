@@ -1,0 +1,16 @@
+.navLink {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(209, 234, 235);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 3px 3px 4px rgb(209, 209, 209);
+    display: inline-block;
+    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navLink:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 7px rgb(209, 209, 209);
+}
