@@ -1,0 +1,15 @@
+.heroItem {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 1rem;
+    background-color: rgb(165, 226, 236);
+    color: black;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.heroItem:hover {
+    transform: scale(1.1);
+    background-color: rgb(195, 234, 240);
+}
