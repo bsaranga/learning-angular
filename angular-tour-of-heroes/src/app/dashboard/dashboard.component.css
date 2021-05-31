@@ -13,3 +13,7 @@
     transform: scale(1.1);
     background-color: rgb(195, 234, 240);
 }
+
+.idsub {
+    font-size: 0.7rem;
+}
