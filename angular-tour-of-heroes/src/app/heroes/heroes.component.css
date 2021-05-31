@@ -1,10 +1,13 @@
 .heroes {
     margin-left: -1 rem;
-    list-style-type: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .listItem {
     margin-top: 1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
     background-color: rgb(156, 214, 236);
     width: 8rem;
     padding: 0.2rem;
@@ -19,12 +22,9 @@
     cursor: pointer;
 }
 
-.selected {
-    background-color: aqua;
-}
-
 .badge {
-    background-color: aquamarine;
+    background-color: rgb(16, 170, 119);
     padding: 0.4rem;
     border-radius: 100%;
+    color: rgb(255, 255, 255);
 }
